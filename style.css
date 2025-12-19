@@ -1,0 +1,1122 @@
+@font-face {
+    font-family: 'logo-font';
+    src: url(fonts/WtfBokytimeRegular-PKB4m.ttf);
+}
+
+@font-face {
+    font-family: 'zipline-font';
+    src: url(fonts/TT\ Smalls\ Trial\ Black.otf);
+}
+
+@font-face {
+    font-family: 'another1-font';
+    src: url(fonts/TT\ Chocolates\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'subheading-font';
+    src: url(fonts/TT\ Chocolates\ Light\ Italic.otf);
+}
+
+@font-face {
+    font-family: 'quote-font';
+    src: url(fonts/TT\ Ricordi\ Trial\ Nobili.ttf);
+}
+
+* {
+    scroll-padding-top: 40px;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(to right, black, rgba(138, 81, 31, 0.916), black);
+
+}
+
+:target {
+    scroll-margin-top: 40px;
+}
+
+.mob-container {
+    display: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.header .logo h1 {
+    line-height: 50px;
+    font-family: 'logo-font';
+    justify-content: start;
+    margin-top: 2px;
+}
+
+.header .logo i {
+    font-size: 25px;
+    margin-top: 12px;
+    margin-right: 3px;
+}
+
+.container .logo {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(78, 48, 5);
+    margin-left: 15px;
+}
+
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 166, 0);
+    box-shadow: 5px 5px 5px rgb(255, 207, 117) inset, -5px -5px 5px rgb(0, 0, 0, 0.550) inset;
+    border: 1.5px solid orange;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+
+
+nav ul {
+    gap: 50px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul li a {
+    font-family: 'another1-font';
+    padding: 5px 10px;
+    font-weight: bold;
+    color: rgb(78, 48, 5);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: rgb(78, 48, 5);
+    color: orange;
+    border-radius: 5px;
+}
+
+ul li a.active {
+    background-color: rgb(78, 48, 5);
+    color: orange;
+    border-radius: 5px;
+}
+
+.path-left {
+    position: absolute;
+    clip-path: circle(230px at left);
+    margin-top: 27px;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.path-right {
+    position: absolute;
+    clip-path: circle(230px at right);
+    margin-top: 27px;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.plate {
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    left: 385px;
+    bottom: 100px;
+    image-rendering: auto;
+
+}
+
+.container img {
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    height: 70px;
+    width: 80px;
+    display: block;
+}
+
+.container img:hover {
+    transform: perspective(100px) translateZ(30px);
+    transition: 90ms;
+}
+
+.container .burger {
+    left: 12px;
+    bottom: -85px;
+
+}
+
+.container .chomin {
+    left: 104px;
+    bottom: -95px;
+}
+
+.container .coke {
+    left: 154px;
+    bottom: -135px;
+}
+
+.container .frezes {
+    left: 104px;
+    bottom: -175px;
+}
+
+.container .pizza {
+    left: 14px;
+    bottom: -180px;
+}
+
+/* --- right side path img */
+
+.container .ch1 {
+    position: absolute;
+    height: 94.5px;
+    width: 94.5px;
+    left: 1150px;
+    bottom: 400px;
+}
+
+.container .ch2 {
+    position: absolute;
+    height: 85.5px;
+    width: 85.5px;
+    left: 1070px;
+    bottom: 330px;
+}
+
+.container .ch3 {
+    position: absolute;
+    height: 85.5px;
+    width: 85.5px;
+    left: 1050px;
+    bottom: 215px;
+}
+
+.container .ch4 {
+    height: 105px;
+    width: 105px;
+    position: absolute;
+    left: 1068px;
+    bottom: 95px;
+}
+
+.container .ch5 {
+    height: 73.5px;
+    width: 73.5px;
+    position: absolute;
+    left: 1175px;
+    bottom: 50px;
+}
+
+.offer img {
+    position: absolute;
+    bottom: 205px;
+    left: 10px;
+    width: 125px;
+    height: 125px;
+    animation: popBlink 3s ease-out infinite;
+    transform-origin: center;
+}
+
+@keyframes popBlink {
+    0% {
+        transform: scale(0.5) translateZ(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+
+    30% {
+        transform: scale(1.3) translateZ(80px) rotate(5deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1) translateZ(0px) rotate(-5deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.5) translateZ(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+}
+
+.offer2 img {
+    position: absolute;
+    bottom: 205px;
+    margin-left: 1142px;
+    width: 100px;
+    top: 280px;
+    height: 100px;
+    animation: popBlink2 3s ease-out infinite;
+    transform-origin: center;
+}
+
+@keyframes popBlink2 {
+    0% {
+        transform: scale(0.5) translateZ(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+
+    30% {
+        transform: scale(1.3) translateZ(80px) rotate(5deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1) translateZ(0px) rotate(-5deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.5) translateZ(80px) rotate(0deg);
+        opacity: 0.4;
+    }
+}
+
+.quotes {
+    width: 0;
+    height: 70px;
+    font-family: 'quote-font';
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 8px rgb(255, 216, 40), -3px -3px 8px rgb(78, 48, 5);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(255, 255, 255);
+    font-size: 48px;
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    animation: typing 5s steps(40, end) forwards, blink .6s infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 920px;
+        /* FIXED */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.DISPIMG img {
+    image-resolution: auto;
+    pointer-events: none;
+    position: absolute;
+    height: 430px;
+    width: 430px;
+    left: 420px;
+    bottom: 85px;
+    transition: 1s;
+    animation: popup 0.3s ease-in-out;
+    transform-origin: center;
+    filter: drop-shadow(3px 3px 10px gold);
+}
+
+.DISPIMG img:not([src]),
+.DISPIMG img[src=""] {
+    display: none;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateZ(500px) scale(0.5);
+    }
+
+    100% {
+        transform: translateZ(0) scale(1);
+    }
+}
+
+.menustitle {
+    color: rgb(94, 61, 0);
+    position: absolute;
+    font-size: 30px;
+    font-family: 'zipline-font';
+    left: 36rem;
+    padding-top: 15px;
+}
+
+.Menu {
+    background-color: orange;
+    margin-top: 250px;
+    height: 490px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+tr td {
+    font-size: 20px;
+    color: white;
+    font-family: 'another1-font';
+}
+
+table {
+    margin: auto;
+    width: 85%;
+    padding: 1em;
+}
+
+.Menu tr {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+
+.Menu td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+}
+
+.Menu td:nth-child(2) {
+    justify-self: right;
+}
+
+th {
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: orange;
+}
+
+.Briyanis {
+    margin-left: 12px;
+    margin-top: 70px;
+    background-color: rgb(94, 61, 0);
+    height: 22em;
+    width: 25em;
+    border-radius: 20px;
+    box-shadow: -1px -1px 10px rgb(255, 255, 255), 1px 1px 10px rgba(0, 0, 0, 0.744) inset;
+}
+
+.Fast-foods {
+    margin-left: 5px;
+    margin-top: 70px;
+    background-color: rgb(94, 61, 0);
+    height: 22em;
+    width: 25em;
+    border-radius: 20px;
+    box-shadow: -1px -1px 10px rgb(255, 255, 255), 1px 1px 10px rgba(0, 0, 0, 0.744) inset;
+}
+
+.Drinks {
+    margin-top: 70px;
+    margin-left: 8px;
+    background-color: rgb(94, 61, 0);
+    height: 23em;
+    width: 25em;
+    border-radius: 20px;
+    box-shadow: -1px -1px 10px rgb(255, 255, 255), 1px 1px 10px rgba(0, 0, 0, 0.744) inset;
+}
+
+.aboutus {
+    background-color: orange;
+    padding: 10px;
+    margin-top: 150px;
+
+}
+
+.background {
+    background-color: rgb(94, 61, 0);
+    height: 250px;
+    width: 990px;
+}
+
+.aboutus h1 {
+    color: orange;
+    font-family: 'subheading-font';
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.aboutus p {
+    color: white;
+    font-family: 'another1-font';
+    padding: 15px;
+    font-size: 17.5px;
+}
+
+.aboutus img {
+    height: 250px;
+    width: 250px;
+    float: right;
+}
+
+/* --------------------------------------------------- */
+
+.footer {
+    border-top: 1px solid rgb(255, 231, 187);
+    color: white;
+    background-color: orange;
+    margin-top: 150px;
+    height: 80%;
+    width: 100%;
+}
+
+.footer h2 {
+    color: rgb(94, 61, 0);
+    font-family: 'subheading-font';
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+.icons {
+    color: rgb(94, 61, 0);
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 16px;
+}
+
+.Copyrights {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(94, 61, 0);
+}
+
+.bloody {
+    filter: drop-shadow(1px 1px 8px rgb(255, 255, 255));
+    image-rendering: auto;
+    display: grid;
+    margin: auto;
+    height: 100px;
+    width: 160px;
+}
+
+.hamberger {
+    display: none;
+}
+
+.menustitle-mob {
+    display: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+/* ---------------------------------------mobile view-------------------------------------- */
+
+@media (max-width:576px) {
+
+
+    .hamberger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin: auto 15px;
+    }
+
+    .hamberger .line {
+        margin-bottom: 5px;
+        display: block;
+        background-color: rgb(94, 61, 0);
+        width: 30px;
+        height: 4px;
+    }
+
+    .header {
+        height: 45px;
+        width: 100%;
+    }
+
+    nav ul {
+        position: fixed;
+        right: -100%;
+        width: 50%;
+        height: 50vh;
+        margin-top: 1.5rem;
+        margin-right: 0;
+        background-color: rgb(94, 61, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 3rem;
+        align-items: center;
+        transition: 0.9s ease;
+    }
+
+
+    nav ul.show {
+        right: 0;
+        transition: 0.9s ease;
+    }
+
+    nav ul li a {
+        color: orange;
+
+    }
+
+    nav ul li a:hover {
+        background-color: orange;
+        color: rgb(94, 61, 0);
+    }
+
+    .container .logo {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+
+    .top-title {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    .top-title h2 {
+        text-shadow: 3px 3px 10px rgb(0, 0, 0);
+        font-family: 'zipline-font';
+        font-size: 22px;
+        color: orange;
+        position: relative;
+        top: 4rem;
+    }
+
+    .mob-container {
+        color: orange;
+        position: relative;
+        border-radius: 15px;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        height: 84rem;
+        width: 75%;
+        background-color: orange;
+        border: 1.5px solid gold;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+    }
+
+
+
+    .mob-container img {
+        filter: drop-shadow(1px 1px 11px gold);
+    }
+
+    .m-burger {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-burger h3 {
+        font-family: 'another1-font';
+        padding-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-burger p {
+        color: white;
+        padding-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-pizza {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-pizza h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-pizza p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-chomin {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-chomin h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-chomin p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-frizes {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-frizes h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-frizes p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-coke {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-coke h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-coke p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-burger {
+        position: absolute;
+        top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-pizza {
+        position: absolute;
+        top: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-chomin {
+        position: absolute;
+        top: 34.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-frizes {
+        position: absolute;
+        top: 51.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-coke {
+        position: absolute;
+        top: 68rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .m-burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    .m-pizza {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-chomin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-frizes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-coke {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .btn-group {
+
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .btn-group button {
+        border-radius: 20px;
+        border: none;
+        padding: 5px 10px;
+        font-weight: bold;
+        background-color: rgb(255, 166, 0);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px rgb(255, 255, 255);
+    }
+
+    .btn-group button:active{
+        background-color: rgb(88, 53, 0);
+        color: orange;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px orange;
+
+    }
+
+    /* ------------------waste gaa--------------------------------------------------- */
+
+    .path-right,
+    .path-left {
+        display: none;
+    }
+
+    .plate {
+        display: none;
+    }
+
+    .offer,
+    .offer2 {
+        display: none;
+    }
+
+    .container .burger {
+        display: none;
+    }
+
+    .container .chomin {
+        display: none;
+    }
+
+    .container .coke {
+        display: none;
+    }
+
+    .container .frezes {
+        display: none;
+    }
+
+    .container .pizza {
+        display: none;
+    }
+
+    .container .ch1 {
+        display: none;
+    }
+
+    .container .ch2 {
+        display: none;
+    }
+
+    .container .ch3 {
+        display: none;
+    }
+
+    .container .ch4 {
+        display: none;
+    }
+
+    .container .ch5 {
+        display: none;
+    }
+
+    .DISPIMG img {
+        display: none;
+        height: 180px;
+        width: 180px;
+        left: 12.8rem;
+        top: 12.5rem;
+    }
+
+    .quotes {
+        display: none;
+        font-size: 32px;
+        height: 40px;
+        left: 15px;
+    }
+
+    .menustitle {
+        display: none;
+    }
+
+    /* ------------------waste gaa--------------------------------------------------- */
+
+    .menustitle-mob {
+        color: rgb(94, 61, 0);
+        font-family: 'zipline-font';
+        font-size: 22px;
+        display: flex;
+        font-size: 25px;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+
+
+    .Menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        border-radius: 15px;
+        border: 1.5 solid gold;
+        border: 1.5px solid gold;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        height: 85%;
+        width: 75%;
+    }
+
+    table th {
+        color: orange;
+        font-size: 25px;
+    }
+
+    table td {
+        font-family: 'another1-font';
+        font-size: 15px;
+    }
+
+    .Briyanis {
+        color: white;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+        margin-bottom: 40px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 17rem;
+        width: 16rem;
+    }
+
+    .Drinks {
+        color: white;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        background-color: rgb(94, 61, 0);
+        margin-bottom: 40px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 20rem;
+        width: 16rem;
+    }
+
+    .Fast-foods {
+        color: white;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+        margin-bottom: 40px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 18rem;
+        width: 16rem;
+    }
+
+    .Menu tr {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Menu td:nth-child(1) {
+        flex: 1;
+        justify-self: left;
+    }
+
+    .Menu td:nth-child(2) {
+        justify-self: right;
+    }
+
+
+    .aboutus {
+        color: white;
+        padding: 4px;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .aboutus img {
+        display: none;
+    }
+
+    .background {
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744) inset;
+        width: 98%;
+        height: auto;
+        background-color: rgb(94, 61, 0);
+    }
+
+    .aboutus h1 {
+        font-size: 22px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .aboutus p {
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+        font-family: 'another1-font';
+        font-size: 14.5px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .Copyrights {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .Copyrights p {
+        font-size: 9px;
+        background-color: rgb(94, 61, 0);
+
+    }
+
+    .Copyrights p:nth-child(2) {
+        display: none;
+    }
+
+    .Copyrights p:nth-child(3) {
+        display: none;
+    }
+
+    .footer h2 {
+        padding-top: 15px;
+        font-size: 22px;
+    }
+
+    .bloody {
+        height: 80px;
+        width: 140px;
+    }
+
+    .footer {
+        height: 50%;
+        width: 100%;
+    }
+}
