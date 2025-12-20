@@ -570,7 +570,7 @@ body {
         position: fixed;
         right: -100%;
         width: 50%;
-        height: 50vh;
+        height: 40vh;
         margin-top: 1.5rem;
         margin-right: 0;
         background-color: rgb(94, 61, 0);
@@ -961,6 +961,10 @@ body {
         font-size: 25px;
         margin: 10px auto;
         justify-content: center;
+    }
+
+    .menustitle-mob i{
+        padding-top: 1px;
     }
 
 
