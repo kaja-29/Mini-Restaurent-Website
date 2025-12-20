@@ -856,16 +856,19 @@ body {
         display: flex;
         flex-direction: row;
         gap: 15px;
+        white-space: nowrap;
     }
 
     .btn-group button {
         border-radius: 20px;
+        padding: 7px 10px;
         border: none;
-        padding: 5px 10px;
+        font-size: 10px;
         font-weight: bold;
         background-color: rgb(255, 166, 0);
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
             inset 3px 3px 8px rgb(255, 255, 255);
+        
     }
 
     .btn-group button:active{
@@ -1041,7 +1044,7 @@ body {
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 20rem;
+        height: 17rem;
         width: 16rem;
 
     }
