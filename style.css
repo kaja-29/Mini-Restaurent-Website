@@ -570,7 +570,7 @@ body {
         position: fixed;
         right: -100%;
         width: 50%;
-        height: 40vh;
+        max-height: auto;
         margin-top: 1.5rem;
         margin-right: 0;
         background-color: rgb(94, 61, 0);
@@ -771,7 +771,7 @@ body {
 
     .mob-container .mobi-burger {
         position: absolute;
-        top: 1.5rem;
+        top: 1rem;
         margin-left: auto;
         margin-right: auto;
         height: 110px;
