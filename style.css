@@ -854,7 +854,6 @@ body {
     }
 
     .btn-group {
-
         padding-bottom: 10px;
         display: flex;
         flex-direction: row;
@@ -871,7 +870,6 @@ body {
         background-color: rgb(255, 166, 0);
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
             inset 3px 3px 8px rgb(255, 255, 255);
-        
     }
 
     .btn-group button:active{
@@ -1136,4 +1134,426 @@ body {
         height: 50%;
         width: 100%;
     }
+}
+
+/* --------------------tablet view-------------------------------------------- */
+
+@media (max-width:1024px){
+
+    /* ------------display - hidden--------------------- */
+    .path-right,
+    .path-left {
+        display: none;
+    }
+
+    .plate {
+        display: none;
+    }
+
+    .offer,
+    .offer2 {
+        display: none;
+    }
+
+    .container .burger {
+        display: none;
+    }
+
+    .container .chomin {
+        display: none;
+    }
+
+    .container .coke {
+        display: none;
+    }
+
+    .container .frezes {
+        display: none;
+    }
+
+    .container .pizza {
+        display: none;
+    }
+
+    .container .ch1 {
+        display: none;
+    }
+
+    .container .ch2 {
+        display: none;
+    }
+
+    .container .ch3 {
+        display: none;
+    }
+
+    .container .ch4 {
+        display: none;
+    }
+
+    .container .ch5 {
+        display: none;
+    }
+
+    .DISPIMG img {
+        display: none;
+        height: 180px;
+        width: 180px;
+        left: 12.8rem;
+        top: 12.5rem;
+    }
+
+    .quotes {
+        display: none;
+        font-size: 32px;
+        height: 40px;
+        left: 15px;
+    }
+
+    .aboutus img{
+        display: none;
+    }
+
+    .menustitle{
+        display: none;
+    }
+/* ---------------------display - hidden--------------------- */
+
+.top-title {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    .top-title h2 {
+        text-shadow: 3px 3px 10px rgb(0, 0, 0);
+        font-family: 'zipline-font';
+        font-size: 22px;
+        color: orange;
+        position: relative;
+        top: 4rem;
+    }
+
+    .menustitle-mob {
+        color: rgb(94, 61, 0);
+        font-family: 'zipline-font';
+        font-size: 22px;
+        display: flex;
+        font-size: 25px;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .mob-container {
+        color: orange;
+        position: relative;
+        border-radius: 15px;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        height: 84rem;
+        width: 75%;
+        background-color: orange;
+        border: 1.5px solid gold;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+    }
+
+
+
+    .mob-container img {
+        filter: drop-shadow(1px 1px 11px gold);
+    }
+
+    .m-burger {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-burger h3 {
+        font-family: 'another1-font';
+        padding-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-burger p {
+        color: white;
+        padding-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-pizza {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-pizza h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-pizza p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-chomin {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-chomin h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-chomin p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-frizes {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-frizes h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-frizes p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-coke {
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 40px;
+        height: 250px;
+        width: 70%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-coke h3 {
+        font-family: 'another1-font';
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-coke p {
+        color: white;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-burger {
+        position: absolute;
+        top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-pizza {
+        position: absolute;
+        top: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-chomin {
+        position: absolute;
+        top: 34.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-frizes {
+        position: absolute;
+        top: 51.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .mob-container .mobi-coke {
+        position: absolute;
+        top: 68rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 110px;
+        width: 120px;
+    }
+
+    .m-burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    .m-pizza {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-chomin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-frizes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .m-coke {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .btn-group {
+
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        white-space: nowrap;
+    }
+
+    .btn-group button {
+        border-radius: 20px;
+        padding: 7px 10px;
+        border: none;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: rgb(255, 166, 0);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px rgb(255, 255, 255);
+        
+    }
+
+    .btn-group button:active{
+        background-color: rgb(88, 53, 0);
+        color: orange;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px orange;
+
+    }
+
+.Menu{
+    height: auto;
+    width: 75%;
+    margin: auto;
+    border: 1.5px solid gold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+    border-radius: 15px;
+}
+
+.Fast-foods{
+    height: 20rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Drinks{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Briyanis{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background{
+    height: auto;
+    width: 98%;
+    border: 1.5px solid gold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+    border-radius: 15px;
+}
+
+.aboutus{
+    height: auto;
+    width: 100%;
+}
+
+.aboutus h1{
+    padding-bottom: 0;
+}
+
+.footer{
+    width: 100%;
+}
+
+.Copyrights{
+    width: 100%;
+}
+
 }
