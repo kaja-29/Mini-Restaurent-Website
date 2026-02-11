@@ -539,6 +539,428 @@ body {
     overflow-x: hidden;
 }
 
+.mob-container {
+        margin-top: 0;
+        color: orange;
+        border-radius: 15px;
+        margin: 5rem auto;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height:100%;
+        width: 85%;
+        background-color: orange;
+        border: 1.5px solid gold;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
+    }
+
+
+
+    .mob-container img {
+        filter: drop-shadow(1px 1px 11px gold);
+        background-size: cover;
+    }
+
+    .mob-container .mobi-burger {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-burger {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-burger h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-burger p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-pizza {
+        height: 90px;
+        width: 130px;
+        object-fit: cover;
+    }
+
+    .m-pizza {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-pizza h3 {
+        display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-pizza p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-chomin {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-chomin {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-chomin h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-chomin p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-frizes {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-frizes {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-frizes h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-frizes p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+   .mob-container .mobi-coke {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-coke {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-coke h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-coke p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c1 {
+        height: 110px;
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .m-c1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c1 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c1 p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c2 {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-c2 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c2 h3 {
+        display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c2 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c3 {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .m-c3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c3 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c3 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c4 {
+        height: 110px;
+        width: 135px;
+        object-fit: cover;
+    }
+
+    .m-c4 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c4 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c4 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c5 {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+
+    .m-c5 {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c5 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c5 p {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .btn-group {
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+        white-space: nowrap;
+    }
+
+    .btn-group button {
+        border-radius: 8px;
+        padding: 7px 10px;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(255, 166, 0);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px rgb(255, 255, 255);
+    }
+
+    .btn-group button:active{
+        background-color: rgb(88, 53, 0);
+        color: orange;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
+            inset 3px 3px 8px orange;
+
+    }
+
 
 /* ---------------------------------------mobile view-------------------------------------- */
 
@@ -623,14 +1045,18 @@ body {
     }
 
     .mob-container {
+
         color: orange;
-        position: relative;
         border-radius: 15px;
         margin: 5rem auto;
-        display: flex;
-        flex-direction: column;
-        height: 84rem;
-        width: 75%;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height:100%;
+        width: 70%;
         background-color: orange;
         border: 1.5px solid gold;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
@@ -640,232 +1066,392 @@ body {
 
     .mob-container img {
         filter: drop-shadow(1px 1px 11px gold);
+        background-size: cover;
+    }
+
+    .mob-container .mobi-burger {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
     }
 
     .m-burger {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-burger h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        padding-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-burger p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        padding-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-pizza {
+        height: 90px;
+        width: 130px;
+        object-fit: cover;
+    }
+
     .m-pizza {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-pizza h3 {
+        display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-pizza p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-chomin {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-chomin {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-chomin h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-chomin p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-frizes {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-frizes {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-frizes h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-frizes p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+   .mob-container .mobi-coke {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-coke {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-coke h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-coke p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .mob-container .mobi-burger {
-        position: absolute;
-        top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
+    .mob-container .mobi-c1 {
+        height: 110px;
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .m-c1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c1 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c1 p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c2 {
         height: 110px;
         width: 120px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-pizza {
-        position: absolute;
-        top: 18rem;
-        margin-left: auto;
-        margin-right: auto;
+    .m-c2 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c2 h3 {
+        display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c2 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c3 {
         height: 110px;
         width: 120px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-chomin {
-        position: absolute;
-        top: 34.5rem;
-        margin-left: auto;
-        margin-right: auto;
+    .m-c3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c3 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c3 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c4 {
         height: 110px;
-        width: 120px;
+        width: 135px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-frizes {
-        position: absolute;
-        top: 51.2rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 110px;
-        width: 120px;
-    }
-
-    .mob-container .mobi-coke {
-        position: absolute;
-        top: 68rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 110px;
-        width: 120px;
-    }
-
-    .m-burger {
-        display: flex;
-        flex-direction: column;
+    .m-c4 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
         align-items: center;
-        justify-content: flex-end;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
-
-    .m-pizza {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
+    .m-c4 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .m-chomin {
+    .m-c4 p {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .m-frizes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
+    .mob-container .mobi-c5 {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
     }
 
-    .m-coke {
-        display: flex;
-        flex-direction: column;
+    .m-c5 {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c5 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c5 p {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .btn-group {
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        justify-content: center;
         gap: 15px;
         white-space: nowrap;
     }
 
     .btn-group button {
-        border-radius: 20px;
+        border-radius: 8px;
         padding: 7px 10px;
         border: none;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: bold;
         background-color: rgb(255, 166, 0);
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
@@ -981,11 +1567,10 @@ body {
         border: 1.5 solid gold;
         border: 1.5px solid gold;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5rem;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
         height: 85%;
-        width: 75%;
+        width: 80%;
     }
 
     table th {
@@ -1011,12 +1596,12 @@ body {
         border-radius: 20px;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
-        margin-bottom: 40px;
-        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 17rem;
-        width: 16rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        height: fit-content;
+        width: 70%;
     }
 
     .Drinks {
@@ -1026,12 +1611,12 @@ body {
         border: 1.5px solid gold;
         border-radius: 20px;
         background-color: rgb(94, 61, 0);
-        margin-bottom: 40px;
-        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 20rem;
-        width: 16rem;
+        margin-bottom: 2rem;
+        margin-top:0;
+        height: fit-content;
+        width: 70%;
     }
 
     .Fast-foods {
@@ -1041,12 +1626,12 @@ body {
         border-radius: 20px;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
-        margin-bottom: 40px;
-        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 17rem;
-        width: 16rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        height: fit-content;
+        width: 70%;
 
     }
 
@@ -1063,7 +1648,6 @@ body {
     .Menu td:nth-child(2) {
         justify-self: right;
     }
-
 
     .aboutus {
         color: white;
@@ -1138,7 +1722,17 @@ body {
 
 /* --------------------tablet view-------------------------------------------- */
 
-@media (max-width:1024px){
+@media (min-width:575px) and (max-width:1024px){
+
+    .logo h1{
+        font-size: 25px;
+    }
+
+    nav ul {
+        gap: 25px;
+    }
+
+
 
     /* ------------display - hidden--------------------- */
     .path-right,
@@ -1244,15 +1838,21 @@ body {
         justify-content: center;
     }
 
+    /* fuxked up below */
+
     .mob-container {
+
         color: orange;
-        position: relative;
         border-radius: 15px;
         margin: 5rem auto;
-        display: flex;
-        flex-direction: column;
-        height: 84rem;
-        width: 75%;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height:100%;
+        width: 85%;
         background-color: orange;
         border: 1.5px solid gold;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
@@ -1262,238 +1862,396 @@ body {
 
     .mob-container img {
         filter: drop-shadow(1px 1px 11px gold);
+        background-size: cover;
+    }
+
+    .mob-container .mobi-burger {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
     }
 
     .m-burger {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-burger h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        padding-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-burger p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        padding-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-pizza {
+        height: 90px;
+        width: 130px;
+        object-fit: cover;
+    }
+
     .m-pizza {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-pizza h3 {
+        display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-pizza p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-chomin {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-chomin {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-chomin h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-chomin p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+    .mob-container .mobi-frizes {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-frizes {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-frizes h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-frizes p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
+   .mob-container .mobi-coke {
+        height: 110px;
+        width: 120px;
+        object-fit: cover;
+    }
+
     .m-coke {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         border: 1.5px solid gold;
         border-radius: 20px;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-         margin-bottom: 40px;
-        height: 250px;
-        width: 70%;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .m-coke h3 {
+         display: grid;
+        justify-content: center;
         font-family: 'another1-font';
-        margin-bottom: 10px;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .m-coke p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
         color: white;
-        margin-bottom: 15px;
         font-weight: bold;
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .mob-container .mobi-burger {
-        position: absolute;
-        top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
+    .mob-container .mobi-c1 {
+        height: 110px;
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .m-c1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c1 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c1 p {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c2 {
         height: 110px;
         width: 120px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-pizza {
-        position: absolute;
-        top: 18rem;
-        margin-left: auto;
-        margin-right: auto;
+    .m-c2 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c2 h3 {
+        display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c2 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c3 {
         height: 110px;
         width: 120px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-chomin {
-        position: absolute;
-        top: 34.5rem;
-        margin-left: auto;
-        margin-right: auto;
+    .m-c3 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c3 h3 {
+         display: grid;
+        justify-content: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c3 p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .mob-container .mobi-c4 {
         height: 110px;
-        width: 120px;
+        width: 135px;
+        object-fit: cover;
     }
 
-    .mob-container .mobi-frizes {
-        position: absolute;
-        top: 51.2rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 110px;
-        width: 120px;
-    }
-
-    .mob-container .mobi-coke {
-        position: absolute;
-        top: 68rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 110px;
-        width: 120px;
-    }
-
-    .m-burger {
-        display: flex;
-        flex-direction: column;
+    .m-c4 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
         align-items: center;
-        justify-content: flex-end;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 15px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
-
-    .m-pizza {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
+    .m-c4 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .m-chomin {
+    .m-c4 p {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
+        gap:4px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
-    .m-frizes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
+    .mob-container .mobi-c5 {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
     }
 
-    .m-coke {
-        display: flex;
-        flex-direction: column;
+    .m-c5 {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
+        border: 1.5px solid gold;
+        border-radius: 20px;
+        padding: 10px 0;
+        height:100%;
+        gap: 12px;
+        width: 100%;
+        background-color: rgb(94, 61, 0);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
+    }
+
+    .m-c5 h3 {
+         display: grid;
+        text-align: center;
+        font-family: 'another1-font';
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+
+    .m-c5 p {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .btn-group {
-
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        justify-content: center;
         gap: 15px;
         white-space: nowrap;
     }
 
     .btn-group button {
-        border-radius: 20px;
+        border-radius: 8px;
         padding: 7px 10px;
         border: none;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: bold;
         background-color: rgb(255, 166, 0);
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744),
             inset 3px 3px 8px rgb(255, 255, 255);
-        
     }
 
     .btn-group button:active{
