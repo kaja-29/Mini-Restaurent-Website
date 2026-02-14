@@ -12,10 +12,29 @@
 
 <body>
 
+    <div class="cart-container">
+        <div class="cart-content">
+            <div class="cart-title">
+            <p>
+                Your Cart Items
+            </p>
+        </div>
+            <div class="cart-home">
+                            <!-- here each food item was adding one by one -->
+            </div>
+        <div class="cart-order">
+            <button>Place Order</button>
+            <p>Total : 0</p>
+        </div>
+        </div>
+    </div>
+
     <section id="home">
         <div class="container">
-            <div class="path-left"></div>
+            <div class="both-path">
+                <div class="path-left"></div>
             <div class="path-right"></div>
+            </div>
             <div class="header">
                 <a href="#" class="logo"><i class="fa-solid fa-pepper-hot"></i>
                     <h1>SPOT HOT</h1>
@@ -28,6 +47,10 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+
+                <div class="cart-icon"><i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="cart-count"><p>0</p></div></div>
+
                 <div class="hamberger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -35,92 +58,97 @@
                 </div>
 
             </div>
-            <div class="top-title">
+
+            
+            
+            <div class="master-cont">
+                <div class="top-title">
                 <h2>POPULAR ITEMS <i class="fa-solid fa-utensils"></i></h2>
             </div>
-            <div class="mob-container">
-
-                <div class="m-burger">
+                <div class="mob-container">
+                
+                <div class="product-head">
                     <img
-                        src="images/mobi-burg.png" class="mobi-burger" alt="">
-                    <h3>Burger Deluxe</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 4.5 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div> 
+                        src="images/mobi-burg.png" class="product-img" alt="">
+                    <h3 class="product-name">Burger Deluxe</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 4.5 |</p><p class="product-price">&#x20B9 399/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-pizza">
+                <div class="product-head">
                     <img
-                        src="images/mobi-pizza.png" class="mobi-pizza" alt="">
-                    <h3>Pizza Hut</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 4.9 | &#x20B9 499/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/mobi-pizza.png" class="product-img" alt="">
+                    <h3 class="product-name">Pizza Hut</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 4.9 |</p><p class="product-price">&#x20B9 499/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-chomin">
+                <div class="product-head">
                     <img
-                        src="images/mobi-chomin.png" class="mobi-chomin" alt="">
-                    <h3>Ichiraku Ramen</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 5.0 | &#x20B9 499/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/mobi-chomin.png" class="product-img" alt="">
+                    <h3 class="product-name">Ichiraku Ramen</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 5.0 |</p><p class="product-price">&#x20B9 499/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-frizes">
+                <div class="product-head">
                     <img
-                        src="images/mobi-frizes.png" class="mobi-frizes" alt="">
-                    <h3>French Fries</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 4.5 | &#x20B9 269/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/mobi-frizes.png" class="product-img" alt="">
+                    <h3 class="product-name">French Fries</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 4.5 |</p><p class="product-price">&#x20B9 269/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-coke">
+                <div class="product-head">
                     <img
-                        src="images/mobi-coke.png" class="mobi-coke" alt="">
-                    <h3>Coke</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 4.5 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/mobi-coke.png" class="product-img" alt="">
+                    <h3 class="product-name">Coke</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 4.5 |</p><p class="product-price">&#x20B9 399/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
                 <!-- newly added foods -->
-                <div class="m-c1">
+                <div class="product-head">
                     <img
-                        src="images/c1.png" class="mobi-c1" alt="">
-                    <h3>Tanthuri</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 7.1 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/c1.png" class="product-img" alt="">
+                    <h3 class="product-name">Tanthuri</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 7.1 |</p><p class="product-price">&#x20B9 359/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-c2">
+                <div class="product-head">
                     <img
-                        src="images/c2.png" class="mobi-c2" alt="">
-                    <h3>Chicken Brinyani</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 8.1 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/c2.png" class="product-img" alt="">
+                    <h3 class="product-name">Chicken Brinyani</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 8.1 |</p><p class="product-price">&#x20B9 289/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-c3">
+                <div class="product-head">
                     <img
-                        src="images/c3.png" class="mobi-c3" alt="">
-                    <h3>Chicken katlat</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 7.9 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/c3.png" class="product-img" alt="">
+                    <h3 class="product-name">Chicken katlat</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 4.5 |</p><p class="product-price">&#x20B9 379/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-c4">
+                <div class="product-head">
                     <img
-                        src="images/c4.png" class="mobi-c4" alt="">
-                    <h3>Chilli Chicken Varuval</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 10.0 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/c4.png" class="product-img" alt="">
+                    <h3 class="product-name">Chilli Chicken Varuval</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 10.0 |</p><p class="product-price">&#x20B9 499/-</p></div>
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
-                <div class="m-c5">
+                <div class="product-head">
                     <img
-                        src="images/c5.png" class="mobi-c5" alt="">
-                    <h3>Chicken full mandhi</h3>
-                    <p><i class="fa-solid fa-star-half-stroke"></i> 10.0 | &#x20B9 399/-</p>
-                    <div class="btn-group"><button>Add to Cart</button></div>
+                        src="images/c5.png" class="product-img" alt="">
+                    <h3 class="product-name">Chicken full mandhi</h3>
+                    <div class="rating_price"><p><i class="fa-solid fa-star-half-stroke"></i> 10.0 |</p><p class="product-price">&#x20B9 349/-</p></div> 
+                    <div class="btn-group"><button class="cartbtn">Add to Cart</button></div>
                 </div>
 
+            </div>
             </div>
 
             <!-- ----------------------------------------------- -->
