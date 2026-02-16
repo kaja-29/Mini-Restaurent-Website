@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", Contentloaded);
 
 function Contentloaded() {
     lodecontent()
+    
 }
 
 function lodecontent() {
@@ -98,14 +99,19 @@ function lodecontent() {
 
     const cartbtn = document.querySelectorAll(".cartbtn");
     cartbtn.forEach(cartb=>{
-        cartb.addEventListener("click",cartadd)
-    })
+        cartb.addEventListener("click",cartadd);
+    });
 
+    updateprice(); // we calling this update price function here for excution when loadcontent excutes
+    
 }
 // this function used to remove the cart item
 function removeitem() {
-    this.closest(".cart-items").remove();         // closest is used to find the class name and remove that using remove method
-    console.log("clicked");
+    if(confirm("Are u sure to remove this item")){
+    }// closest is used to find the class name and remove that using remove method
+    let title = this.parentElement.querySelector(".item-naam");
+    itemslist=itemslist.filter(el=>el.title!=title);
+    this.closest(".cart-items").remove();
     lodecontent();
 }
 
@@ -131,12 +137,25 @@ function increase(){
     lodecontent();
 }
 
+let itemslist = [];
 
 function cartadd(){
    let product = this.closest(".product-head");
    let productimg = product.querySelector(".product-img").src;
    let productname = product.querySelector(".product-name").innerText;
    let productprice = product.querySelector(".product-price").innerText;
+
+   let itemdetail = {productimg,productname,productprice};
+
+   if(itemslist.find(el=>el.productname==itemdetail.productname)){
+    alert("Product already in Cart");
+    return;
+   }
+
+   else{
+    itemslist.push(itemdetail);
+   }
+   
 
 let fooddetails = creatingcart(productimg,productname,productprice); //here we store the all fetched function in one variable
     // console.log(fooddetails); this will prints the entire return value inside the function
@@ -156,8 +175,8 @@ function creatingcart(productimg,productname,productprice){
             </div>
 
             <div class="item-name">
-                <p>${productname}</p>
-                <p>${productprice}</p>
+                <p class="item-naam">${productname}</p>
+                <p class="item-price">${productprice}</p>
             </div>
 
             <div class="cart-d2">
@@ -165,10 +184,39 @@ function creatingcart(productimg,productname,productprice){
             </div>
 
             <div class="finalprice">
-                 <p>${productprice}</p>
+                 <p class="item-amt">${productprice}</p>
                 <i class="remove fa-solid fa-trash-arrow-up"></i>
             </div>
 
         </div>
         `;
 }
+
+function updateprice(){
+    const totalamt = document.querySelector(".item-total"); //finally tally total amount
+    const cartitem = document.querySelectorAll(".cart-items"); // getting each food items while added in cart
+    let total = 0;
+
+    cartitem.forEach(items=>{           // inside the each food items getting an each item using this then getting an ecah items price 
+        let priceel = items.querySelector(".item-price"); 
+
+        let price = parseFloat(priceel.innerHTML.replace("₹","")); // for calculation purpose when filtering as a string to number 
+        let qtyvalue = items.querySelector(".qty").innerHTML; // using loop we getting an qty of each food items
+        total += (price*qtyvalue); 
+        items.querySelector(".item-amt").innerText = "₹" +" "+(price*qtyvalue); //showing the amt with quantity in final food amount
+        
+    })
+        totalamt.innerHTML = "₹"+" "+total; // this for tally all food price with each quantity wise
+
+        const cartcount = document.querySelector(".cart-count");
+        let count = itemslist.length;
+        cartcount.innerHTML = count;
+        cartcount.style.fontSize = "12px";
+        cartcount.style.fontWeight = "bold";
+
+}
+
+
+
+
+
