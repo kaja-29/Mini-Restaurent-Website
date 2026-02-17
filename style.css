@@ -23,6 +23,32 @@
     src: url(fonts/TT\ Ricordi\ Trial\ Nobili.ttf);
 }
 
+
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0.7);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes magic {
+from{
+        opacity:1;
+    }
+
+    to{
+        opacity:0;
+    }
+}
+
 * {
     scroll-padding-top: 40px;
     scroll-behavior: smooth;
@@ -146,9 +172,14 @@ ul li a.active {
 
 /* cart container section------------------------------------------- */
 
+.cart-count p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .cart-container{
     height: 100%;
-    width: 35%;
+    width: 100%;
     background-color: orange;
     position: fixed;
     right: -100%;
@@ -157,12 +188,6 @@ ul li a.active {
     overflow-x: auto;
     border-left: 1px solid rgb(89, 58, 0);
 }
-
-.cart-count p{
-    font-size: 12px;
-    font-weight: bold;
-}
-
 
 .cart-active{
     right: 0;
@@ -196,17 +221,28 @@ ul li a.active {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    border-top: 1px solid rgb(89, 58, 0);
+    border-bottom: 1px solid rgb(89, 59, 0);
 }
 
 .cart-order p{
     font-family: 'subheading-font';
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .cart-order button{
     background-color: black;
     color: white;
     padding: 0.5rem 0.7rem;
+}
+
+.cart-order button:active{
+    background-color: black;
+    color: orange;
+    transform: perspective(30px) translateZ(-5px);
+    transition: 0.6;
+    padding: 0.5rem 0.7rem;
+
 }
 
 .cart-items{
@@ -221,18 +257,23 @@ ul li a.active {
     width: 70px;
     object-fit: contain;
     padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.495);
+    border-radius: 50%;
 }
 
 .item-name{
+    font-size: 14px;
+    font-family: 'another1-font';
+    font-weight: bold;
     flex: 2;
-     padding-left: 15px;
+    padding-left: 15px;
 }
 
 
 .cart-d2{
-    flex:2;
     flex-direction: column;
     gap:3px;
+    width: 100%;
     
 }
 
@@ -240,20 +281,23 @@ ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 .addminbtn button{
+    height: fit-content;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-   padding: 0.2rem 0.5rem;
-   border-radius: 100%;
-   border: 1.5px solid;
+    background-color: rgb(77, 50, 0);
+    color: orange;
+   border-radius: 50%;
    font-size: 1rem;
    font-weight: bold;
 }
 
 .finalprice{
+    font-size: 14px;
+    font-family: 'subheading-font';
     display: flex;
     gap: 7px;
     justify-content: center;
@@ -261,8 +305,12 @@ ul li a.active {
     padding: 0 10px;
 }
 
-#remove{
-    font-size: 1.3rem;
+.finalprice .item-amt{
+    font-weight: bold;
+}
+
+.remove{
+    font-size: 1.2rem;
 }
 
 /* cart container section end------------------------------------------- */
@@ -770,13 +818,16 @@ body {
 
     .product-name {
          display: grid;
-        justify-content: center;
+         justify-items: center;
+         text-align: center;
         font-family: 'another1-font';
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .rating_price{
         display: flex;
+        text-align: center;
+        justify-content: center;
         gap: 7px;
     }
     .product-price {
@@ -934,7 +985,7 @@ body {
         row-gap:3rem;
         column-gap: 2rem;
         height:100%;
-        width: 75%;
+        width: 70%;
         background-color: orange;
         border: 1.5px solid gold;
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.744) inset, -3px -3px 8px rgba(0, 0, 0, 0.744)inset;
@@ -959,20 +1010,24 @@ body {
         padding: 10px 0;
         height:100%;
         gap: 15px;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         background-color: rgb(94, 61, 0);
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.744), 5px 5px 8px rgba(0, 0, 0, 0.744) inset;
     }
 
     .product-name {
          display: grid;
-        justify-content: center;
+         text-align: center;
+        justify-items: center;
         font-family: 'another1-font';
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .rating_price{
         display: flex;
+        text-align: center;
+        justify-content: center;
         gap: 7px;
     }
     .product-price {
@@ -990,6 +1045,7 @@ body {
     .btn-group {
         display: grid;
         justify-content: center;
+        text-align: center;
         gap: 15px;
         white-space: nowrap;
     }
@@ -1305,6 +1361,8 @@ body {
 }
 
 .cart-items{
+    display: flex;
+    flex-direction: row;
     padding: 8px;
     margin-bottom: 0.7rem;
     border-radius: 10px;
@@ -1528,8 +1586,7 @@ body {
         font-family: 'zipline-font';
         font-size: 22px;
         color: orange;
-        position: relative;
-        top: 4rem;
+        padding: 1rem 0 0 0;
     }
 
     .menustitle-mob {
@@ -1593,13 +1650,16 @@ body {
 
     .product-name {
          display: grid;
-        justify-content: center;
+         text-align: center;
+        justify-items: center;
         font-family: 'another1-font';
         text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
 
     .rating_price{
         display: flex;
+        text-align: center;
+        justify-content: center;
         gap: 7px;
     }
     .product-price {
@@ -1660,17 +1720,14 @@ body {
 
 /* cart container section------------------------------------------- */
 
-.cart-count{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+.cart-count p{
+    font-size: 12px;
     font-weight: bold;
 }
 
 .cart-container{
     height: 100%;
-    width: 40%;
+    width: 60%;
     background-color: orange;
     position: fixed;
     right: -100%;
@@ -1679,8 +1736,6 @@ body {
     overflow-x: auto;
     border-left: 1px solid rgb(89, 58, 0);
 }
-
-
 
 .cart-active{
     right: 0;
@@ -1714,17 +1769,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    border-top: 1px solid rgb(89, 58, 0);
+    border-bottom: 1px solid rgb(89, 59, 0);
 }
 
 .cart-order p{
     font-family: 'subheading-font';
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .cart-order button{
     background-color: black;
     color: white;
     padding: 0.5rem 0.7rem;
+}
+
+.cart-order button:active{
+    background-color: black;
+    color: orange;
+    transform: perspective(30px) translateZ(-5px);
+    transition: 0.6;
+    padding: 0.5rem 0.7rem;
+
 }
 
 .cart-items{
@@ -1739,18 +1805,23 @@ body {
     width: 70px;
     object-fit: contain;
     padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.495);
+
 }
 
 .item-name{
+    font-size: 14px;
+    font-family: 'another1-font';
+    font-weight: bold;
     flex: 2;
-     padding-left: 15px;
+    padding-left: 15px;
 }
 
 
 .cart-d2{
-    flex:2;
     flex-direction: column;
     gap:3px;
+    width: 100%;
     
 }
 
@@ -1758,20 +1829,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 .addminbtn button{
+    height: fit-content;
+    width: fit-content;
     justify-content: center;
     align-items: center;
-   padding: 0.2rem 0.5rem;
-   border-radius: 100%;
-   border: 1.5px solid;
+    background-color: rgb(77, 50, 0);
+    color: orange;
+   border-radius: 50%;
    font-size: 1rem;
    font-weight: bold;
 }
 
 .finalprice{
+    font-size: 14px;
+    font-family: 'subheading-font';
     display: flex;
     gap: 7px;
     justify-content: center;
@@ -1779,8 +1853,12 @@ body {
     padding: 0 10px;
 }
 
-#remove{
-    font-size: 1.3rem;
+.finalprice .item-amt{
+    font-weight: bold;
+}
+
+.remove{
+    font-size: 1.2rem;
 }
 
 

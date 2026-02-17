@@ -108,12 +108,25 @@ function lodecontent() {
 // this function used to remove the cart item
 function removeitem() {
     if(confirm("Are u sure to remove this item")){
-    }// closest is used to find the class name and remove that using remove method
-    let title = this.parentElement.querySelector(".item-naam");
-    itemslist=itemslist.filter(el=>el.title!=title);
-    this.closest(".cart-items").remove();
+    const cartitem = this.closest(".cart-items");
+    let title = cartitem.querySelector(".item-naam").innerText;
+    itemslist=itemslist.filter(el=>el.productname !== title);
+    cartitem.style.animation = "magic 0.5s ease";
+    cartitem.addEventListener("animationend",()=>{
+    cartitem.remove();
+    updateprice();
+    })
     lodecontent();
+    }// closest is used to find the class name and remove that using remove method
+    
+
+    // cart icon animation
+    let carticon = document.querySelector(".cart-icon");
+    carticon.style.animation = "none";
+    void carticon.offsetWidth; // infinite time this helps to run this animation
+    carticon.style.animation = "bounce 0.3s ease";    
 }
+
 
 // increment and decrement function
 function decrease(){
@@ -140,6 +153,14 @@ function increase(){
 let itemslist = [];
 
 function cartadd(){
+
+    // carticon animtion
+    let carticon = document.querySelector(".cart-icon");
+    carticon.style.animation = "none";
+    void carticon.offsetWidth; // infinite time this helps to run this animation
+    carticon.style.animation = "bounce 0.3s ease";
+    //-------------------------------//
+    
    let product = this.closest(".product-head");
    let productimg = product.querySelector(".product-img").src;
    let productname = product.querySelector(".product-name").innerText;
