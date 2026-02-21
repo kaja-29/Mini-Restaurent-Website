@@ -179,7 +179,7 @@ ul li a.active {
 
 .cart-container{
     height: 100%;
-    width: 100%;
+    width: 40%;
     background-color: orange;
     position: fixed;
     right: -100%;
@@ -199,6 +199,7 @@ ul li a.active {
 }
 
 .cart-items{
+    display: flex;
     padding: 8px;
     margin-bottom: 0.7rem;
     border-radius: 10px;
@@ -225,15 +226,17 @@ ul li a.active {
     border-bottom: 1px solid rgb(89, 59, 0);
 }
 
-.cart-order p{
-    font-family: 'subheading-font';
-    font-weight: bold;
-}
 
 .cart-order button{
     background-color: black;
     color: white;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 1rem;
+}
+
+.cart-order p{
+    font-family: 'subheading-font';
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .cart-order button:active{
@@ -241,51 +244,63 @@ ul li a.active {
     color: orange;
     transform: perspective(30px) translateZ(-5px);
     transition: 0.6;
-    padding: 0.5rem 0.7rem;
 
 }
 
 .cart-items{
     display: flex;
     justify-content: space-between;
+    gap:20px;
+    padding: 15px;
     align-items: center;
-    padding: 12px;
 }
 
 .cart-items img{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
     height: 70px;
     width: 70px;
     object-fit: contain;
-    padding: 0 10px;
-    background-color: rgba(255, 255, 255, 0.495);
-    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
 }
 
 .item-name{
-    font-size: 14px;
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
     font-family: 'another1-font';
     font-weight: bold;
-    flex: 2;
-    padding-left: 15px;
+}
+
+
+.item-name .item-price{
+    white-space: nowrap;
+
 }
 
 
 .cart-d2{
+    flex: 1;
+    display: flex;
     flex-direction: column;
-    gap:3px;
-    width: 100%;
     
 }
 
 .addminbtn{
     display: flex;
-    justify-content: center;
+    gap: 8px;
     align-items: center;
+    justify-content: center;
 }
 
 .addminbtn button{
-    height: fit-content;
-    width: fit-content;
+    
+    padding: 0.4rem 0.7rem;
     justify-content: center;
     align-items: center;
     background-color: rgb(77, 50, 0);
@@ -296,21 +311,22 @@ ul li a.active {
 }
 
 .finalprice{
-    font-size: 14px;
-    font-family: 'subheading-font';
     display: flex;
-    gap: 7px;
-    justify-content: center;
+    gap: 8px;
+    font-size: 17px;
+    font-family: 'subheading-font';
     align-items: center;
-    padding: 0 10px;
 }
 
 .finalprice .item-amt{
+    width: 40px;
+    white-space: nowrap;
     font-weight: bold;
+    font-variant-numeric: tabular-nums ;
 }
 
 .remove{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* cart container section end------------------------------------------- */

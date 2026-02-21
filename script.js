@@ -159,6 +159,7 @@ function cartadd(){
     carticon.style.animation = "none";
     void carticon.offsetWidth; // infinite time this helps to run this animation
     carticon.style.animation = "bounce 0.3s ease";
+    
     //-------------------------------//
     
    let product = this.closest(".product-head");
@@ -167,7 +168,6 @@ function cartadd(){
    let productprice = product.querySelector(".product-price").innerText;
 
    let itemdetail = {productimg,productname,productprice};
-
    if(itemslist.find(el=>el.productname==itemdetail.productname)){
     alert("Product already in Cart");
     return;
@@ -190,6 +190,7 @@ cartcollector.append(createdelement); // here we append the funftion data contai
 
 function creatingcart(productimg,productname,productprice){
     return`
+    
     <div class="cart-items">
             <div>
                 <img src="${productimg}" alt="">
@@ -213,6 +214,8 @@ function creatingcart(productimg,productname,productprice){
         `;
 }
 
+
+
 function updateprice(){
     const totalamt = document.querySelector(".item-total"); //finally tally total amount
     const cartitem = document.querySelectorAll(".cart-items"); // getting each food items while added in cart
@@ -227,7 +230,7 @@ function updateprice(){
         items.querySelector(".item-amt").innerText = "₹" +" "+(price*qtyvalue); //showing the amt with quantity in final food amount
         
     })
-        totalamt.innerHTML = "₹"+" "+total; // this for tally all food price with each quantity wise
+        totalamt.innerHTML =  "Total - ₹"+" "+total; // this for tally all food price with each quantity wise
 
         const cartcount = document.querySelector(".cart-count");
         let count = itemslist.length;
